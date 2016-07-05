@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title><%=includeName%></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="format-detection" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="asset/styles/base.css"><% if (includeBootstrap) { %>
+  <link rel="stylesheet" href="asset/vendors/bootstrap/css/bootstrap.min.css"><% } if (includeAwesome) { %>
+  <link rel="stylesheet" href="asset/vendors/font-awesome/css/font-awesome.min.css"><% } if (includeToastr) { %>
+  <link rel="stylesheet" href="asset/vendors/toastr/toastr.min.css"><% } if (includeDatepicker) { %>
+  <link rel="stylesheet" href="asset/vendors/eonasdan-datetimepicker/css/bootstrap-datetimepicker.min.css"><% } %>
+  <!--[if IE 8]> 
+    <script src="asset/vendors/html5shiv.min.js" type="text/javascript"></script>
+    <script src="asset/vendors/respond.min.js" type="text/javascript"></script>
+  <![endif]--> 
+</head>
+<body>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">您正在使用 <strong>过时</strong> 
+    的浏览器。 请 <a href="http://browsehappy.com/">升级您的浏览器</a> 改善您的体验。</p>
+  <![endif]-->
+  <div>hello yi!</div>
+  <% if (includeJquery) { %>
+  <script src="asset/vendors/jquery.min.js"></script><% } if (includeBootstrap) { %>
+  <script src="asset/vendors/bootstrap/js/bootstrap.min.js"></script><% } if (includeValidate) { %>
+  <script src="asset/vendors/jquery.validate.min.js"></script><% } if (includeToastr) { %>
+  <script src="asset/vendors/toastr/toastr.min.js"></script><% } if (includeDatepicker) { %>
+  <script src="asset/vendors/eonasdan-datetimepicker/js/moment.min.js"></script>
+  <script src="asset/vendors/eonasdan-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="asset/vendors/eonasdan-datetimepicker/js/zh-cn.js"></script><% } %>
+</body>
+</html>
