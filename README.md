@@ -1,0 +1,2 @@
+# generator-yi
+web scaffold
